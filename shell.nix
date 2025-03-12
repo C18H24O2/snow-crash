@@ -4,6 +4,8 @@
 
 pkgs.mkShell {
   nativeBuildInputs = with pkgs; [
+    wireshark
     nmap
+    john
   ];
 }
