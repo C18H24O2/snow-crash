@@ -6,7 +6,7 @@
 /*   By: kiroussa <oss@xtrm.me>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/13 03:50:32 by kiroussa          #+#    #+#             */
-/*   Updated: 2025/03/13 04:00:55 by kiroussa         ###   ########.fr       */
+/*   Updated: 2025/03/13 04:55:35 by kiroussa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -73,10 +73,12 @@ int	main(int argc, char **argv) {
 	printf("Accepting...\n");
 	int client_sock = w("accept", accept(sock, NULL, NULL));
 	char buf[65536];
-	bzero(buf, sizeof(buf));
-	ssize_t r2 = w("recv", recv(client_sock, buf, sizeof(buf), 0));
-	printf("Received %ld bytes\n", r2);
+	while (1) {
+		bzero(buf, sizeof(buf));
+		r = w("recv", recv(client_sock, buf, sizeof(buf), 0));
+		if (r == 0) break;
+		printf("%s", buf);
+	}
 	close(sock);
-	printf("Done, got: %s\n", buf);
 	return 0;
 }
