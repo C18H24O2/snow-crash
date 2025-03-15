@@ -7,5 +7,6 @@ pkgs.mkShell {
     wireshark
     nmap
     john
+    qemu
   ];
 }
