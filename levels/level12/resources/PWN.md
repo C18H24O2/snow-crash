@@ -1,18 +1,18 @@
-# pwn
+# flag12
 
-the home for this user contains an suid perl script
-this script takes user input and does the following:
+The home for this user contains an suid perl script
+
+This script takes user input and does the following:
 - substitute all lowercase letters for uppercase letters
 - finds the first space and removes everything after it
 
-it then runs this modified input in the following command:
+..it then runs this modified input in the following command:
 
 `egrep "^$xx" /tmp/xd 2>&1`
 
-where `$xx` is the input
+..where `$xx` is our user-controlled input.
 
-we use `/*/` to access a directory where we have permissions, and add a script that runs getflag, and in full uppercase letters to not be affected by the string modification
-we then use curl to run our script:
+We use globbing `/*/` to access a directory where we have permissions, and add a script that runs getflag, and in full uppercase letters to not be affected by the string modification, and then run `curl` to pass on params to the web server:
 
 ```bash
 cat <<EOF

@@ -1,4 +1,4 @@
-# pwn
+# flag13
 
 The home of this user contains a suid file named `level13`
 we try to run it
