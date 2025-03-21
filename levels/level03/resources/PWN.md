@@ -1,6 +1,6 @@
 # flag03
 
-We are given a suid/sgid binary which seems to just run `system("/usr/bin/env echo Exploit me.")`.
+We are given a suid/sgid binary, which when analyzed with `gdb` seems to just run `system("/usr/bin/env echo Exploit me.")`.
 
 We can create a script in our path to override the `echo` command, such as:
 ```bash

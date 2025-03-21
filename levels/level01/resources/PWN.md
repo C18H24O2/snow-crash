@@ -10,9 +10,9 @@ We can use tools like John the Ripper to decrypt the password.
 ```
 $ echo 42hDRfypTqqnw > /tmp/pwn.txt
 $ john /tmp/pwn.txt --show
-?:abcdefg
+?:<password>
 
 1 password hash cracked, 0 left
 ```
 
-We can now login as `flag01` with the password `abcdefg`.
+We can now login as `flag01`.

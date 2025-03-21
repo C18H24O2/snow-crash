@@ -1,9 +1,9 @@
 # flag07
 
 bon.
-level07 has an executable `level07` that runs the `LOGNAME` env variable
-we set this variable to our `getflag` command to get the flag
+
+level07 has an executable named `level07` that runs the `LOGNAME` env variable; we set this variable to `getflag` to get the flag.
 
 `LOGNAME='$(/bin/getflag)' ./level07`
 
-we can now login as `level08`
+We can now login as `level08`.

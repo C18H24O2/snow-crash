@@ -6,9 +6,11 @@
 /*   By: kiroussa <oss@xtrm.me>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/13 03:50:32 by kiroussa          #+#    #+#             */
-/*   Updated: 2025/03/13 04:55:35 by kiroussa         ###   ########.fr       */
+/*   Updated: 2025/03/21 12:28:55 by kiroussa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+// Micro-serv practice software
 
 #include <unistd.h>
 #include <sys/socket.h>

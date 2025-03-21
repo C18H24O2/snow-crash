@@ -11,8 +11,8 @@ Exporting our file to the host machine, we can use `ghidra` to decompile the exe
 From there, we look at the main function (see `main.c`) and, after some security measures, find that to get a flag, the main function runs the following pseudo-code:
 ```c
 if (currentUserId == 30xx) { // 30xx is the UID of the flagXX user
-    flag = decrypt("encrypted_flag");
-    fputs(flag, stdout);
+    flag = decrypt("<encrypted_flag>");
+    print(flag);
 }
 ```
 
@@ -31,7 +31,7 @@ We then decompile the `ft_des` function and add a main function to run it on its
 
 We pass our encrypted flag, and get back the actual flag for level 14, completing the challenge :)
 
-## Trollface Emoji
+## :trollface:
 
 To make sure we did in fact have the right flag, we used a second method to get it.
 
