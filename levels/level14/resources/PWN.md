@@ -39,7 +39,7 @@ Looking at the iso, we can notice that it is vulnerable to the [Dirty COW](https
 
 We can find a [GitHub page]((https://github.com/dirtycow/dirtycow.github.io/wiki/PoCs)) listing some ready made code to use the exploit.
 
-From there we can get root privilege, it's as easy as loging in to `flag14` and getting the flag:
+From there we can get root privilege, it's as easy as logging in to `flag14` and getting the flag:
 
 ```
 level14@SnowCrash:~$ cd /tmp/
