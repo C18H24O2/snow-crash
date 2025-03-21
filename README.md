@@ -1,4 +1,4 @@
-# [snow-crash](https://projects.intra.42.fr/projects/42cursus-snow-crash)
+# [snow-crash](https://projects.intra.42.fr/42cursus-snow-crash/kiroussa)
 
 ## License
 
